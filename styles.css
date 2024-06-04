@@ -1,16 +1,24 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 header {
-    background: #333;
+    background: #343a40;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
 nav ul {
@@ -20,25 +28,72 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 section {
-    padding: 2rem;
+    padding: 3rem 2rem;
     margin: 2rem 0;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 1.75rem;
+    color: #343a40;
+    margin-bottom: 1.5rem;
+}
+
+section p, section ul {
+    margin: 0 0 1rem 0;
+}
+
+section ul {
+    padding-left: 1.5rem;
+}
+
+section ul li {
+    margin-bottom: 0.5rem;
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #333;
+    background: #343a40;
     color: #fff;
+    margin-top: 3rem;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    section {
+        padding: 3rem 5rem;
+        margin: 3rem auto;
+        max-width: 800px;
+    }
 }
